@@ -1,0 +1,22 @@
+*{
+	box-sizing: border-box;
+}
+
+.menu{
+	width: 200px;
+	background-color: #f8e69e;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 8px 8px 0 0 #8e0909;
+}
+.list-menu{
+	list-style-type:none;
+	padding: 5px 0 5px 5px;
+	margin: 8px 0 8px 5px;
+	color:#8e0909;
+	font-weight: bold;
+}
+
+.list-menu>li{
+	padding-bottom: 5px;
+}
