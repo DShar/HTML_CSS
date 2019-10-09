@@ -29,11 +29,12 @@
 	width: 400px;
 	background-color: #008ccb;
 	border: 3px solid #0071af;
+	color:white;
+	font-family: 'Arial', sans-serif;
 }
 
 .regForm-title{
-	color:white;
-	font-family: 'Open Sans Condensed', sans-serif;
+
 	font-size: 1.5em;
 	font-weight: lighter;
 
