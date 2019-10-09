@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 
+/*******************     TASK 1.1   *********************/
 .menu{
 	width: 200px;
 	background-color: #f8e69e;
@@ -20,3 +21,28 @@
 .list-menu>li{
 	padding-bottom: 5px;
 }
+
+/********************************************************/
+
+/*******************     TASK 1.2   *********************/
+.registration-form{
+	width: 400px;
+	background-color: #008ccb;
+	border: 3px solid #0071af;
+}
+
+.regForm-title{
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.registration-form>hr{
+	color:#53b2dc;
+}
+
+/********************************************************/
