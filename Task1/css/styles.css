@@ -31,6 +31,7 @@
 	border: 3px solid #0071af;
 	color:white;
 	font-family: 'Arial', sans-serif;
+	position: relative;
 }
 
 .regForm-title{
@@ -44,6 +45,36 @@
 
 .registration-form>hr{
 	color:#53b2dc;
+}
+
+#d-email{
+	margin: 20px;
+}
+
+#d-pass{
+	margin:20px;
+}
+
+#d-pass-sec{
+	position: absolute;
+	left: 180px;
+	bottom: 83px;
+}
+
+#d-email>input{
+	width: 300px;
+}
+
+#d-pass>input, #d-pass-sec>input{
+	width: 140px;
+}
+
+.send-btn{
+	background-color: #ffe288;
+	height: 25px;
+	border: 0;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 
 /********************************************************/
