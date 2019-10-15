@@ -81,38 +81,97 @@
 
 /********************************************************/
 
+/*******************     TASK 1.3 (first)  *********************/
+
+.dd-menu-container {
+    color: blue;
+}
+
+.dd-menu-content {
+    display: none;
+    width: 100px;
+    padding:5px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 0px 10px grey;
+}
+
+.dd-menu-container {
+    margin-left: 20px;
+
+}
+
+.dd-menu-title>a {
+    color: blue;
+    text-decoration: underline;
+    padding: 2px 5px 2px 5px;   
+}
+
+
+.dd-menu-content>span {
+    display: block;
+}
+
+.dd-menu-title>a:hover{
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 1px 0px 10px grey;
+}
+
+.dd-menu-container:hover .dd-menu-content{
+	display: block;
+}
+
+.dd-menu-container:blur .dd-menu-content{
+	display: none;
+}
+
+.dd-menu-item:hover{
+	color: white;
+	background-color: #30a6fa;
+}
+
+/********************************************************/
+
 /*******************     TASK 1.3   *********************/
 
-ul.nav{
+ul.nav {
     margin-left: 1%;
     border: 0px;
 }
 
-.nav-tabs .nav-item:nth-child(2){
-    margin-left:10px;
+.nav-tabs .nav-item:nth-child(2) {
+    margin-left: 10px;
 }
 
-.dropdown-toggle::after
-{
+.dropdown-toggle::after {
     display: none;
 }
 
-a.dropdown-toggle{
+a.dropdown-toggle {
     color: blue;
     text-decoration: underline;
 }
 
-a.dropdown-toggle:hover{
+a.dropdown-toggle:hover {
     color: black;
 }
 
-.dropdown-item{
-    color:blue;
+.dropdown-item {
+    color: blue;
 }
 
-a.dropdown-item:hover{
+a.dropdown-item:hover {
     background-color: #2fa6fa;
-    color:white;
+    color: white;
 }
 
 /********************************************************/
