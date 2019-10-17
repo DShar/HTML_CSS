@@ -104,14 +104,17 @@
     color: #0000ff;
     position: relative;
     display: inline-block;
+    margin-top: 10px;
 }
 
 .dd-menu-content {
     display: none;
     position: absolute;
+    top: 20px;
+    background-color: #fff;
     width: 100px;
     padding:5px;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
     border: 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -123,72 +126,43 @@
 
 }
 
-.dd-menu-container>a {
+.dd-menu-title {
     color: #0000ff;
     text-decoration: underline;
-    padding: 2px 5px 2px 5px;  
+    padding: 2px 5px 5px 5px;  
 }
 
+.dd-menu-title::after{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	display: block;
+	height: 5px;
+	width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
 
 .dd-menu-content>span {
     display: block;
 }
 
-.dd-menu-container:hover a{
+.dd-menu-container:hover .dd-menu-title{
     color: black;
+    background-color: #fff;
     text-decoration: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    box-shadow: 0px -7px 6px 0px rgba(0,0,0,0.2);
-    padding-bottom: 5px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
 }
 
 .dd-menu-container:hover .dd-menu-content{
 	display: block;
 }
-/*
-.dd-menu-container:blur .dd-menu-content{
-	display: none;
-}*/
 
 .dd-menu-content>span:hover{
 	color: white;
 	background-color: #30a6fa;
-}
-
-/********************************************************/
-
-/*******************     TASK 1.3   *********************/
-
-ul.nav {
-    margin-left: 1%;
-    border: 0px;
-}
-
-.nav-tabs .nav-item:nth-child(2) {
-    margin-left: 10px;
-}
-
-.dropdown-toggle::after {
-    display: none;
-}
-
-a.dropdown-toggle {
-    color: blue;
-    text-decoration: underline;
-}
-
-a.dropdown-toggle:hover {
-    color: black;
-}
-
-.dropdown-item {
-    color: blue;
-}
-
-a.dropdown-item:hover {
-    background-color: #2fa6fa;
-    color: white;
 }
 
 /********************************************************/
