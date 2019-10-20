@@ -39,7 +39,23 @@ body{
 	border: 0;
 }
 
-/*********        END Of NAVIGATION        ************/
+/*********         MAIN CONTENT            ************/
+
+.container{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.container>article{
+	background-color: #fff;
+}
+
+.container>article p{
+	font-size: 1.2em;
+}
+
 
 /*********       MEDIA QUERIES             ************/
 
@@ -92,4 +108,22 @@ body{
 	.nav-panel-desktop>input{
 		width: 45%;
 	}
+
+	.container-desktop{
+		width: 75%;
+	}
+
+	.article-desktop-2{
+		
+	}
+
+	.article-desktop-3{
+		
+	}
+
+	.article-desktop-4{
+		width: 20%;
+		
+	}
+
 }
