@@ -128,12 +128,12 @@ body {
         width: 95%;
     }
 
-    .article-mobile-1 {
+    .article-mobile {
         width: 100%;
         margin-bottom: 10px;
     }
 
-    .article-mobile-1 img {
+    .article-mobile img {
         width: 100%;
     }
 
@@ -226,14 +226,14 @@ body {
     }
 
     .container-desktop>div:nth-child(1) {
-        width: 19%;
+        width: 24%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
     .container-desktop>div:nth-child(2) {
-        width: 79%;
+        width: 74%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -241,6 +241,14 @@ body {
 
     .container-desktop>div:nth-child(2)>article {
         flex-direction: row;
+    }
+
+    .container-desktop>div:nth-child(2)>article>img + div {
+        justify-content: flex-start;
+    }
+
+    .container-desktop>div:nth-child(2)>article>img + div>.comments {
+        margin-top: 40%;
     }
 
     .container-desktop>div:nth-child(2)>article>img {
@@ -251,17 +259,24 @@ body {
     .container-desktop>div>div {
         display: flex;
         justify-content: space-between;
+        margin-top: 15px;
     }
 
     .container-desktop>div>div>div:nth-child(1) {
-        width: 65%;
+        width: 64%;
+        display: flex;
     }
 
     .container-desktop>div>div>div:nth-child(2) {
-        width: 30%;
+        width: 34%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .container-desktop>div>div>div:nth-child(2)>article:nth-child(n+2)
+    {
+    	margin-top: 10px;
     }
 
     .article-desktop img {
