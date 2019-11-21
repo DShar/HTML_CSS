@@ -199,11 +199,10 @@ h1{
         flex-direction: row;
     }
 
-    .row-item-2
+    .row-item-lg
     {
-        flex: 1;
+        flex: 2;
         margin: 0 5px;
-        flex:2;
     }
 
     .row-lg img{
