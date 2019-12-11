@@ -85,9 +85,28 @@ body {
   flex: 1 1 auto;
   margin: 15px 5px;
   font-size: 14px;
+  color: #52795d;
+}
+
+.navigation__menu-item:hover {
+  color: #ae73cc;
 }
 
 .navigation__brand {
   width: 70%;
   margin: auto;
+}
+
+.navigation__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription {
+  display: flex;
+  width: 70%;
+  margin: 15px auto;
+  border-top: rgba(214, 214, 214, 0.7) dashed 1px;
+  border-bottom: rgba(214, 214, 214, 0.7) dashed 1px;
 }
