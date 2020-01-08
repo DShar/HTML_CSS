@@ -10,36 +10,66 @@
     <link href="https://fonts.googleapis.com/css?family=Overlock&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header header__centered-with-sidemargins">
         <nav class="navigation">
             <ul class="navigation__menu">
-                <li class="navigation__menu-item">Recipes</li>
-                <li class="navigation__menu-item">School</li>
-                <li class="navigation__menu-item">Ideas</li>
-                <li class="navigation__menu-item">Authors</li>
+                <li class="navigation__menu-item">Fashion</li>
+                <li class="navigation__menu-item">Beauty</li>
+                <li class="navigation__menu-item">Culture</li>
+                <li class="navigation__menu-item">Travel</li>
                 <li class="navigation__menu-item">About</li>
             </ul>
             <div class="navigation__brand">
-                <img class="navigation__image" src="images/logo.png" alt=""/>
+                <img class="navigation__image" src="images/logo.jpg" alt=""/>
             </div>            
         </nav>
         <div class="header__image-block">
-            <img class="header__image" src="images/cupcakes.jpg"/>
-            <span class="header__title">Share your <span class="bold">Food Sense</span></span>
+            <img class="header__image" src="images/header.jpg"/>
+            <span class="header__title">The latest <span class="bold">Fashion News</span></span>
             <span class="header__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
         </div>
         <span class="header__photo-mark">*photo by Jane Doe</span>
         
     </header>        
-    <div class="main-content">
-        <div class="subscription">
-            <span class="subscription__icon"></span>
-            <span class="subscription__text"></span>
-            <div class="subscription__input">
-                <input type="email" placeholder="Email"/>
-                <input type="button" value="Submit"/>
+    <div class="main-content main-content__centered-with-sidemargins">
+        <div class="subscribtion">            
+            <div class="subscribtion__desc">
+                <span class="subscribtion__icon">
+                    <img class="subscribtion__image" src="images/subscribe-icon.png" alt="Subscribe"/>
+                </span>
+                <span class="subscribtion__text">
+                    We want to reward your loyalty not just once, 
+                    but every month with exclusive Vogue events invites 
+                    and first-to-market product offers plus insider access to 
+                    behind-the-scenes content.
+                </span>
+            </div>
+            <div class="subscribtion__input">
+                <input type="email" class="subscribtion__email" placeholder="Email"/>
+                <input type="button" class="subscribtion__button" value="Submit"/>
             </div>          
         </div>
+        <section class="articles">
+            <article class="article">
+                <span class="article__icon article__content-item">
+                    <img class="article__image" src="images/title-images/show.jpg" alt="Fashion show" />
+                </span>
+                <a class="article__title article__content-item" href="#">
+                    Naeem Kan pre-fall 2020
+                </a>
+                <div class="article__text article__content-item">
+                    See the entire Naeem Khan pre-fall 2020 collection. 
+                </div>
+                <div class="article__footer article__content-item">
+                    <span class="article__date">
+                        Jan 5, 2020
+                    </span>
+                    <span class="article_link-to-read">
+                        Read
+                    </span>
+                </div>
+            </article>
+        </section>
     </div>
     <footer>
 

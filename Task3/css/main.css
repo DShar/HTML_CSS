@@ -28,11 +28,14 @@ body {
   flex-direction: column;
 }
 
+.header__centered-with-sidemargins {
+  width: 70%;
+  margin: 15px auto;
+}
+
 .header__image-block {
   font-family: 'Dancing Script', cursive;
   position: relative;
-  width: 70%;
-  margin: auto;
 }
 
 .header__image {
@@ -42,20 +45,20 @@ body {
 .header__title {
   display: block;
   background-color: rgba(255, 255, 255, 0.623);
-  height: 30px;
+  height: 20px;
   width: 100%;
   padding-left: 10px;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
 }
 
 .header__description {
   display: block;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Dancing Script', cursive;
   background-color: #000;
   color: #fff;
-  height: 30px;
+  height: 20px;
   width: 100%;
   padding-left: 10px;
   position: absolute;
@@ -64,8 +67,7 @@ body {
 
 .header__photo-mark {
   align-self: flex-end;
-  margin-right: 15%;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 /****  Navigation   *****/
@@ -76,8 +78,6 @@ body {
 .navigation__menu {
   display: flex;
   flex-direction: row;
-  width: 70%;
-  margin: 15px auto;
   border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
 }
 
@@ -89,24 +89,105 @@ body {
 }
 
 .navigation__menu-item:hover {
-  color: #ae73cc;
+  color: #ff8936;
 }
 
 .navigation__brand {
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
 .navigation__image {
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.subscription {
-  display: flex;
+.main-content__centered-with-sidemargins {
   width: 70%;
   margin: 15px auto;
-  border-top: rgba(214, 214, 214, 0.7) dashed 1px;
-  border-bottom: rgba(214, 214, 214, 0.7) dashed 1px;
+}
+
+.subscribtion {
+  padding: 5px 0;
+  margin-bottom: 20px;
+  border-top: rgba(214, 214, 214, 0.7) dashed 1.5px;
+  border-bottom: rgba(214, 214, 214, 0.7) dashed 1.5px;
+}
+
+.subscribtion__desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subscribtion__icon {
+  width: 100%;
+  margin-right: 5px;
+}
+
+.subscribtion__image {
+  width: 100%;
+}
+
+.subscribtion__text {
+  flex: 1 1 auto;
+  font-size: 10px;
+}
+
+.subscribtion__email {
+  width: 69%;
+}
+
+.subscribtion__button {
+  width: 29%;
+}
+
+/*              ARTICLES                */
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__content-item {
+  flex: 1 1 auto;
+  margin: 5px 0;
+}
+
+.article__image {
+  width: 100%;
+}
+
+.article__title {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #52795d;
+}
+
+.article__title:hover, .article__title:active {
+  text-decoration: none;
+  color: #ff8936;
+}
+
+.article__text {
+  font-size: 12px;
+}
+
+.article__footer {
+  font-size: 10px;
+}
+
+.article__date {
+  color: #999;
+}
+
+.article_link-to-read {
+  color: #52795d;
 }

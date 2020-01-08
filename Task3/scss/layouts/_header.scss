@@ -5,11 +5,14 @@
     flex-direction: column;
 }
 
+.header__centered-with-sidemargins{
+    width: 70%;
+    margin: 15px auto;
+}
+
 .header__image-block{
     font-family: 'Dancing Script', cursive;
     position: relative;
-    width: 70%;
-    margin:auto;
 }
 
 .header__image{
@@ -19,20 +22,20 @@
 .header__title{
     display: block;
     background-color: rgba(255, 255, 255, 0.623);
-    height: 30px;
+    height: 20px;
     width: 100%;
     padding-left: 10px;
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
 }
 
 .header__description{
     display: block;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Dancing Script', cursive;
     background-color: #000;
     color: #fff;
-    height: 30px;
+    height: 20px;
     width: 100%;
     padding-left: 10px;
     position: absolute;
@@ -41,8 +44,7 @@
 
 .header__photo-mark{
     align-self: flex-end;
-    margin-right: 15%;
-    font-size: 10px;
+    font-size: 8px;
 }
  
 
@@ -54,8 +56,6 @@
 .navigation__menu{
     display: flex;
     flex-direction: row;
-    width: 70%;
-    margin: 15px auto;
     border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
 }
 
@@ -67,15 +67,16 @@
 }
 
 .navigation__menu-item:hover{
-    color: rgb(174, 115, 204);
+    color: rgb(255, 137, 54);
 }
 
 .navigation__brand{
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 
 .navigation__image{
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
