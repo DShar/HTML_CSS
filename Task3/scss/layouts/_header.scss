@@ -1,13 +1,9 @@
-/*    */
+@import '../common/mixins';
+@import'../common/media/media__header';
 
 .header{   
     display: flex;
     flex-direction: column;
-}
-
-.header__centered-with-sidemargins{
-    width: 70%;
-    margin: 15px auto;
 }
 
 .header__image-block{
@@ -51,28 +47,29 @@
 /****  Navigation   *****/
 .navigation{
     font-family: 'Overlock', cursive;
-}
-
-.navigation__menu{
     display: flex;
-    flex-direction: row;
-    border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
-}
 
-.navigation__menu-item{
-    flex:1 1 auto;
-    margin: 15px 5px;
-    font-size: 14px;
-    color: rgb(82, 121, 93)
-}
+    &__menu{
+        display: flex;
+        flex-direction: row;
+    }
 
-.navigation__menu-item:hover{
-    color: rgb(255, 137, 54);
-}
+    &__icon{
+        width: 25px;
+        height: 25px;
+    }
 
-.navigation__brand{
-    width: 50%;
-    margin: auto;
+    &__menu-item{
+        flex:1 1 auto;
+        margin: 15px 5px;
+        font-size: 14px;
+        color: rgb(82, 121, 93);
+
+        &:hover{
+            color: rgb(255, 137, 54);
+            cursor: pointer;
+        }
+    }
 }
 
 .navigation__image{
@@ -80,4 +77,24 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.fashion-icon{
+    background: url('../images/menu-icons/fashion-icon.svg') no-repeat;
+}
+
+.beauty-icon{
+    background: url('../images/menu-icons/beauty-icon.svg') no-repeat;
+}
+
+.travel-icon{
+    background: url('../images/menu-icons/travel-icon.svg') no-repeat;
+}
+
+.culture-icon{
+    background: url('../images/menu-icons/culture-icon.svg') no-repeat;
+}
+
+.about-icon{
+    background: url('../images/menu-icons/about-icon.svg') no-repeat;
 }

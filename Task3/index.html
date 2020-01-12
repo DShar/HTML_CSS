@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Overlock&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header header__centered-with-sidemargins">
+    <header class="header">
         <nav class="navigation">
             <ul class="navigation__menu">
-                <li class="navigation__menu-item">Fashion</li>
-                <li class="navigation__menu-item">Beauty</li>
-                <li class="navigation__menu-item">Culture</li>
-                <li class="navigation__menu-item">Travel</li>
-                <li class="navigation__menu-item">About</li>
+                <li class="navigation__menu-item"><span class="navigation__icon fashion-icon"></span><span>Fashion</span></li>
+                <li class="navigation__menu-item"><span class="navigation__icon beauty-icon"></span><span>Beauty</span></li>
+                <li class="navigation__menu-item"><span class="navigation__icon culture-icon"></span><span>Culture</span></li>
+                <li class="navigation__menu-item"><span class="navigation__icon travel-icon"></span><span>Travel</span></li>
+                <li class="navigation__menu-item"><span class="navigation__icon about-icon"></span><span>About</span></li>
             </ul>
             <div class="navigation__brand">
                 <img class="navigation__image" src="images/logo.jpg" alt=""/>
@@ -31,7 +31,7 @@
         <span class="header__photo-mark">*photo by Jane Doe</span>
         
     </header>        
-    <div class="main-content main-content__centered-with-sidemargins">
+    <div class="main-content">
         <div class="subscribtion">            
             <div class="subscribtion__desc">
                 <span class="subscribtion__icon">
@@ -46,11 +46,11 @@
             </div>
             <div class="subscribtion__input">
                 <input type="email" class="subscribtion__email" placeholder="Email"/>
-                <input type="button" class="subscribtion__button" value="Submit"/>
+                <input type="button" class="subscribtion__button" value="Subscribe"/>
             </div>          
         </div>
         <section class="articles">
-            <article class="article">
+            <article class="article articles__article">
                 <span class="article__icon article__content-item">
                     <img class="article__image" src="images/title-images/show.jpg" alt="Fashion show" />
                 </span>
@@ -64,15 +64,86 @@
                     <span class="article__date">
                         Jan 5, 2020
                     </span>
-                    <span class="article_link-to-read">
-                        Read
-                    </span>
+                    <a class="article_link-to-read" href='#'>Read</a>
                 </div>
+            </article>
+            <article class="article articles__article">
+                    <span class="article__icon article__content-item">
+                        <img class="article__image" src="images/title-images/rachel-zoe.jpg" alt="Fashion show" />
+                    </span>
+                    <a class="article__title article__content-item" href="#">
+                        Rachel Zoe pre-fall 2020
+                    </a>
+                    <div class="article__text article__content-item">
+                        See the entire Rachel Zoe pre-fall 2020 collection.
+                    </div>
+                    <div class="article__footer article__content-item">
+                        <span class="article__date">
+                            Jan 10, 2020
+                        </span>
+                        <a class="article_link-to-read" href='#'>Read</a>
+                    </div>
+            </article>
+            <article class="article articles__article">
+                    <span class="article__icon article__content-item">
+                        <img class="article__image" src="images/title-images/gift.jpg" alt="Fashion show" />
+                    </span>
+                    <a class="article__title article__content-item" href="#">
+                        The most wanted Christmas gift
+                    </a>
+                    <div class="article__text article__content-item">
+                        While the festive season is known to bring with it a whole lot of joy,
+                         it can also double as a rather daunting time of the year
+                         for those who find themselves shopping for the perfect Christmas gift.
+                         The holidays inspire generosity and this in turn leaves many 
+                         wanting to treat their nearest and dearest to something special.
+                    </div>
+                    <div class="article__footer article__content-item">
+                        <span class="article__date">
+                            Dec 22, 2019
+                        </span>
+                        <a class="article_link-to-read" href='#'>Read</a>
+                    </div>
+            </article>
+            <article class="article articles__article">
+                    <span class="article__icon article__content-item">
+                        <img class="article__image" src="images/title-images/gin.jpg" alt="Fashion show" />
+                    </span>
+                    <a class="article__title article__content-item" href="#">
+                        This London Dry Gin is set to be your tipple of choice this holiday season
+                    </a>
+                    <div class="article__text article__content-item">
+                            Those who have a soft spot for dry gin will know that quality
+                             is everything when it comes to this spirit. 
+                             The three founders behind Sipsmith know this all too well–in fact, 
+                             it’s why they wanted to create Sipsmith, 
+                             a brand of gin that would never compromise on quality.
+                    </div>
+                    <div class="article__footer article__content-item">
+                        <span class="article__date">
+                            Dec 15, 2019
+                        </span>
+                        <a class="article_link-to-read" href='#'>Read</a>
+                    </div>
             </article>
         </section>
     </div>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__content">
+            <ul class="footer__menu">
+                <li class="footer__menu-item">Privacy policy</li>
+                <li class="footer__menu-item"> Site terms</li>
+                <li class="footer__menu-item">Contact</li>
+            </ul>
+            <div class="footer__copyright">
+                    &copy;2020 NewsLifeMedia. All rights reserved.
+            </div>
+        </div>
+        <div class="footer__links">
+            <a href="#" class="link"><img class="link__image" src="./images/twitter.png" alt="twitter"/></a>
+            <a href="#" class="link"><img class="link__image" src="./images/facebook.svg" alt="facebook"/></a>
+            <a href="#" class="link"><img class="link__image" src="./images/instagram.png" alt="inst"/></a>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,45 @@
+@media screen and (max-width: 479px)
+{
+    .main-content
+    {
+        @include center-content(70%);
+    }
+
+    .subscribtion__icon{
+        width: 100%;
+    }
+
+    .articles{
+        flex-direction: column;   
+    
+        &__article{
+            flex:1 1 auto;
+        }
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 768px)
+{
+    .main-content
+    {
+        @include center-content(80%);
+    }
+
+    .subscribtion__icon{
+        width: 70px;
+    }
+
+    .articles{
+        flex-direction: row;  
+        flex-wrap: wrap; 
+    
+        &__article{
+            flex-basis: 47%;
+            margin: 5px;
+        }
+    }
+
+    .article__icon{
+        height: 180px;
+    }
+}
