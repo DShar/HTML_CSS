@@ -27,7 +27,26 @@ body {
     width: 70%;
     margin: 15px auto;
   }
-  .navigation {
+  .header__title {
+    height: 20px;
+    width: 100%;
+    bottom: 20px;
+  }
+  .header__description {
+    font-size: 10px;
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+  }
+  .header__image-block::after {
+    content: "*photo by Jane Doe";
+    right: 0px;
+    bottom: -10px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__navigation {
     flex-direction: column;
   }
   .navigation__menu {
@@ -47,7 +66,26 @@ body {
     width: 80%;
     margin: 15px auto;
   }
-  .navigation {
+  .header__title {
+    height: 20px;
+    width: 100%;
+    bottom: 20px;
+  }
+  .header__description {
+    font-size: 10px;
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+  }
+  .header__image-block::after {
+    content: "*photo by Jane Doe";
+    right: 0px;
+    bottom: -10px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__navigation {
     flex-direction: row-reverse;
     align-items: center;
   }
@@ -65,7 +103,30 @@ body {
     width: 80%;
     margin: 15px auto;
   }
-  .navigation {
+  .header__title {
+    font-size: 20px;
+    padding: 10px;
+    height: 40px;
+    width: fit-content;
+    bottom: 100px;
+  }
+  .header__description {
+    font-size: 15px;
+    padding: 5px;
+    height: 30px;
+    width: fit-content;
+    bottom: 70px;
+  }
+  .header__image-block::after {
+    content: "photo by Jane Doe";
+    color: #777;
+    right: 5px;
+    bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.812);
+    border-radius: 2px;
+    padding: 2px;
+  }
+  .header__navigation {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -93,40 +154,33 @@ body {
   position: relative;
 }
 
+.header__image-block::after {
+  font-size: 8px;
+  position: absolute;
+  font-family: 'Alata', sans-serif;
+}
+
 .header__image {
   width: 100%;
 }
 
 .header__title {
   display: block;
-  background-color: rgba(255, 255, 255, 0.623);
-  height: 20px;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.712);
   padding-left: 10px;
   position: absolute;
-  bottom: 20px;
 }
 
 .header__description {
   display: block;
-  font-size: 10px;
-  font-family: 'Dancing Script', cursive;
   background-color: #000;
   color: #fff;
-  height: 20px;
-  width: 100%;
   padding-left: 10px;
   position: absolute;
-  bottom: 0;
-}
-
-.header__photo-mark {
-  align-self: flex-end;
-  font-size: 8px;
 }
 
 /****  Navigation   *****/
-.navigation {
+.header__navigation {
   font-family: 'Overlock', cursive;
   display: flex;
 }
@@ -180,6 +234,33 @@ body {
   background: url("../images/menu-icons/about-icon.svg") no-repeat;
 }
 
+/*   MENU   */
+.header__menu {
+  width: 100%;
+}
+
+.menu__tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu__item {
+  background-color: rgba(115, 115, 89, 0.55);
+  flex-grow: 1;
+  padding: 5px 0;
+  text-align: center;
+  border-right: 0.5px solid rgba(115, 115, 89, 0.71);
+  border-left: 0.5px solid rgba(115, 115, 89, 0.71);
+  color: #52795d;
+}
+
+.menu__item:hover {
+  background-color: rgba(115, 115, 89, 0.71);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 479px) {
   .main-content {
     width: 70%;
@@ -214,6 +295,27 @@ body {
   }
   .article__icon {
     height: 180px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .main-content {
+    width: 80%;
+    margin: 15px auto;
+  }
+  .subscribtion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscribtion__desc {
+    flex-basis: 65%;
+  }
+  .subscribtion__input {
+    flex-basis: 35%;
+  }
+  .subscribtion__icon {
+    width: 70px;
   }
 }
 
@@ -323,6 +425,14 @@ body {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer {
+    width: 80%;
+    margin: 15px auto;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .footer {
     width: 80%;
     margin: 15px auto;

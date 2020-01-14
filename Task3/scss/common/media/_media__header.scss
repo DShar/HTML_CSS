@@ -2,46 +2,91 @@
 {
     .header{
         @include center-content(70%);
-    }
 
-    .navigation{
-        flex-direction: column;
+        &__title{
+            height: 20px;
+            width: 100%;
+            bottom: 20px;
+        }
+
+        &__description{
+            font-size: 10px;
+            height: 20px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        &__image-block::after{           
+            content: "*photo by Jane Doe";
+            right: 0px;
+            bottom: -10px;
+        }
 
         &__menu{
-            border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
-        }
-
-        &__icon{
             display: none;
-        }
-
-        &__brand{
-            width: 50%;
-            margin: auto;
         }
     }
 
+    .header__navigation{
+        flex-direction: column;
+    }
 
+    
+    .navigation__menu{
+        border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
+    }
+
+    .navigation__icon{
+        display: none;
+    }
+
+    .navigation__brand{
+        width: 50%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width:480px) and (max-width: 768px)
 {
     .header{
         @include center-content(80%);
-    }
 
-    .navigation{
-        flex-direction: row-reverse;
-        align-items: center;
-      
-        &__icon{
+        &__title{
+            height: 20px;
+            width: 100%;
+            bottom: 20px;
+        }
+
+        &__description{
+            font-size: 10px;
+            height: 20px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        &__image-block::after{           
+            content: "*photo by Jane Doe";
+            right: 0px;
+            bottom: -10px;
+        }
+
+        &__menu{
             display: none;
         }
+    }
 
-        &__brand{
-            width: 40%;
-            margin: auto;
-        }
+    .header__navigation{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+          
+    .navigation__icon{
+        display: none;
+    }
+
+    .navigation__brand{
+        width: 40%;
+        margin: auto;
     }
 }
 
@@ -49,27 +94,51 @@
 {
     .header{
         @include center-content(80%);
+
+        &__title{
+            font-size: 20px;
+            padding: 10px;
+            height: 40px;
+            width: fit-content;
+            bottom: 100px;
+        }
+
+        &__description{
+            font-size: 15px;
+            padding: 5px;
+            height: 30px;
+            width: fit-content;
+            bottom: 70px;
+        }
+
+        &__image-block::after{           
+            content: "photo by Jane Doe";
+            color: #777;
+            right: 5px;
+            bottom: 15px;
+            background-color: rgba(255, 255, 255, 0.812);
+            border-radius: 2px;
+            padding: 2px;
+        }
     }
 
-    .navigation{
+    .header__navigation{
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-
-        &__menu{
-            flex-basis: 50%;
-        }
-
-        &__menu-item{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__brand{
-            width: 30%;
-        }
     }
 
-    
+    .navigation__menu{
+        flex-basis: 50%;
+    }
+
+    .navigation__menu-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation__brand{
+        width: 30%;
+    }
 }

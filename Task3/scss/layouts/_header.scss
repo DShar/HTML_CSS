@@ -9,6 +9,12 @@
 .header__image-block{
     font-family: 'Dancing Script', cursive;
     position: relative;
+
+    &::after{
+        font-size: 8px;
+        position: absolute;
+        font-family: 'Alata', sans-serif;
+    }
 }
 
 .header__image{
@@ -17,58 +23,46 @@
 
 .header__title{
     display: block;
-    background-color: rgba(255, 255, 255, 0.623);
-    height: 20px;
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.712);
     padding-left: 10px;
     position: absolute;
-    bottom: 20px;
 }
 
 .header__description{
-    display: block;
-    font-size: 10px;
-    font-family: 'Dancing Script', cursive;
+    display: block;   
     background-color: #000;
     color: #fff;
-    height: 20px;
-    width: 100%;
     padding-left: 10px;
     position: absolute;
-    bottom: 0;
 }
 
-.header__photo-mark{
-    align-self: flex-end;
-    font-size: 8px;
-}
  
 
 /****  Navigation   *****/
-.navigation{
+.header__navigation{
     font-family: 'Overlock', cursive;
     display: flex;
+}
 
-    &__menu{
-        display: flex;
-        flex-direction: row;
-    }
+.navigation__menu{
+    display: flex;
+    flex-direction: row;
+}
 
-    &__icon{
-        width: 25px;
-        height: 25px;
-    }
+.navigation__icon{
+    width: 25px;
+    height: 25px;
+}
 
-    &__menu-item{
-        flex:1 1 auto;
-        margin: 15px 5px;
-        font-size: 14px;
-        color: rgb(82, 121, 93);
+.navigation__menu-item{
+    flex:1 1 auto;
+    margin: 15px 5px;
+    font-size: 14px;
+    color: rgb(82, 121, 93);
 
-        &:hover{
-            color: rgb(255, 137, 54);
-            cursor: pointer;
-        }
+    &:hover{
+        color: rgb(255, 137, 54);
+        cursor: pointer;
     }
 }
 
@@ -97,4 +91,32 @@
 
 .about-icon{
     background: url('../images/menu-icons/about-icon.svg') no-repeat;
+}
+
+/*   MENU   */
+
+.header__menu{
+    width: 100%;
+}
+
+.menu__tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu__item{
+    background-color: rgba(115, 115, 89, 0.55);
+    flex-grow: 1;
+    padding: 5px 0;
+    text-align: center;
+    border-right: 0.5px solid rgba(115, 115, 89, 0.71);
+    border-left: 0.5px solid rgba(115, 115, 89, 0.71);
+    color: rgb(82, 121, 93);
+
+    &:hover{
+        background-color: rgba(115, 115, 89, 0.71);
+        cursor: pointer;
+    }
 }

@@ -43,3 +43,30 @@
         height: 180px;
     }
 }
+
+@media screen and (min-width:769px) and (max-width: 992px)
+{
+    .main-content
+    {
+        @include center-content(80%);
+    }
+
+    .subscribtion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__desc{
+            flex-basis: 65%;
+        }
+
+        &__input{
+            flex-basis: 35%;
+        }
+
+        &__icon{
+            width: 70px;
+        }
+    }
+
+}
