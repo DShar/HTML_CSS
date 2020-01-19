@@ -3,7 +3,6 @@
 
 .header{   
     display: flex;
-    flex-direction: column;
 }
 
 .header__image-block{
@@ -46,7 +45,6 @@
 
 .navigation__menu{
     display: flex;
-    flex-direction: row;
 }
 
 .navigation__icon{
@@ -56,7 +54,6 @@
 
 .navigation__menu-item{
     flex:1 1 auto;
-    margin: 15px 5px;
     font-size: 14px;
     color: rgb(82, 121, 93);
 
@@ -96,27 +93,24 @@
 /*   MENU   */
 
 .header__menu{
-    width: 100%;
-}
-
-.menu__tabs{
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: 'Alata', sans-serif;
     width: 100%;
+    margin-top: -5px;
 }
 
 .menu__item{
-    background-color: rgba(115, 115, 89, 0.55);
+    background-color: rgba(232, 232, 232, 0.55);
     flex-grow: 1;
     padding: 5px 0;
     text-align: center;
-    border-right: 0.5px solid rgba(115, 115, 89, 0.71);
-    border-left: 0.5px solid rgba(115, 115, 89, 0.71);
+    border-right: 0.5px solid rgba(232, 232, 232, 0.71);
+    border-left: 0.5px solid rgba(232, 232, 232, 0.71);
     color: rgb(82, 121, 93);
 
     &:hover{
-        background-color: rgba(115, 115, 89, 0.71);
+        background-color: rgba(200, 200, 150, 0.81);
         cursor: pointer;
     }
 }

@@ -46,12 +46,11 @@
 }
 
 .article__content-item{
-    flex: 1 1 auto;
     margin: 5px 0;
 }
 
 .article__image{
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }

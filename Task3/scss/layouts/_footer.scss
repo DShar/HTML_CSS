@@ -19,7 +19,6 @@
 
 .footer__menu-item{
     flex: 1 1 auto;
-    font-size: 8px;
     color: rgb(82, 121, 93);
 
     &:not(:last-child)::after{
@@ -30,7 +29,6 @@
 }
 
 .footer__copyright{
-    font-size: 7px;
     color: #999;
 }
 
@@ -44,7 +42,7 @@
 
     .link{
         display: block;
-        width: 30px;
+        width: 26px;
         margin: 3px;
     }
     .link__image{

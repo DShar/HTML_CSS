@@ -2,6 +2,7 @@
 {
     .header{
         @include center-content(70%);
+        flex-direction: column;
 
         &__title{
             height: 20px;
@@ -34,6 +35,11 @@
     
     .navigation__menu{
         border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
+        flex-direction: row;
+    }
+
+    .navigation__menu-item{
+        margin: 15px 5px;
     }
 
     .navigation__icon{
@@ -50,6 +56,7 @@
 {
     .header{
         @include center-content(80%);
+        flex-direction: column;
 
         &__title{
             height: 20px;
@@ -84,6 +91,10 @@
         display: none;
     }
 
+    .navigation__menu-item{
+        margin: 15px 5px;
+    }
+
     .navigation__brand{
         width: 40%;
         margin: auto;
@@ -94,6 +105,7 @@
 {
     .header{
         @include center-content(80%);
+        flex-direction: column;
 
         &__title{
             font-size: 20px;
@@ -115,10 +127,14 @@
             content: "photo by Jane Doe";
             color: #777;
             right: 5px;
-            bottom: 15px;
+            bottom: 40px;
             background-color: rgba(255, 255, 255, 0.812);
             border-radius: 2px;
             padding: 2px;
+        }
+
+        &__menu{
+            display: flex;
         }
     }
 
@@ -130,15 +146,76 @@
 
     .navigation__menu{
         flex-basis: 50%;
+        flex-direction: row;
     }
 
     .navigation__menu-item{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 15px 5px;        
     }
 
     .navigation__brand{
         width: 30%;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width: 1176px)
+{
+    .header{
+        @include center-content(80%);
+        flex-direction: row;
+
+        &__title{
+            font-size: 20px;
+            padding: 10px;
+            height: 40px;
+            width: fit-content;
+            bottom: 100px;
+        }
+
+        &__description{
+            font-size: 15px;
+            padding: 5px;
+            height: 30px;
+            width: fit-content;
+            bottom: 70px;
+        }
+
+        &__image-block::after{           
+            content: "photo by Jane Doe";
+            color: #555;
+            right: 5px;
+            bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.612);
+            border-radius: 2px;
+            padding: 2px;
+        }
+
+        &__menu{
+            display: flex;
+        }
+    }
+
+    .header__navigation{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .navigation__menu{
+        flex-direction: column;
+    }
+
+    .navigation__menu-item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 5px;
+    }
+
+    .navigation__brand{
+        width: 50%;
     }
 }

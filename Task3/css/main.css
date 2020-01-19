@@ -26,6 +26,7 @@ body {
   .header {
     width: 70%;
     margin: 15px auto;
+    flex-direction: column;
   }
   .header__title {
     height: 20px;
@@ -51,6 +52,10 @@ body {
   }
   .navigation__menu {
     border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
+    flex-direction: row;
+  }
+  .navigation__menu-item {
+    margin: 15px 5px;
   }
   .navigation__icon {
     display: none;
@@ -65,6 +70,7 @@ body {
   .header {
     width: 80%;
     margin: 15px auto;
+    flex-direction: column;
   }
   .header__title {
     height: 20px;
@@ -92,6 +98,9 @@ body {
   .navigation__icon {
     display: none;
   }
+  .navigation__menu-item {
+    margin: 15px 5px;
+  }
   .navigation__brand {
     width: 40%;
     margin: auto;
@@ -102,6 +111,7 @@ body {
   .header {
     width: 80%;
     margin: 15px auto;
+    flex-direction: column;
   }
   .header__title {
     font-size: 20px;
@@ -121,10 +131,13 @@ body {
     content: "photo by Jane Doe";
     color: #777;
     right: 5px;
-    bottom: 15px;
+    bottom: 40px;
     background-color: rgba(255, 255, 255, 0.812);
     border-radius: 2px;
     padding: 2px;
+  }
+  .header__menu {
+    display: flex;
   }
   .header__navigation {
     flex-direction: row-reverse;
@@ -133,20 +146,72 @@ body {
   }
   .navigation__menu {
     flex-basis: 50%;
+    flex-direction: row;
   }
   .navigation__menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 15px 5px;
   }
   .navigation__brand {
     width: 30%;
   }
 }
 
+@media screen and (min-width: 993px) and (max-width: 1176px) {
+  .header {
+    width: 80%;
+    margin: 15px auto;
+    flex-direction: row;
+  }
+  .header__title {
+    font-size: 20px;
+    padding: 10px;
+    height: 40px;
+    width: fit-content;
+    bottom: 100px;
+  }
+  .header__description {
+    font-size: 15px;
+    padding: 5px;
+    height: 30px;
+    width: fit-content;
+    bottom: 70px;
+  }
+  .header__image-block::after {
+    content: "photo by Jane Doe";
+    color: #555;
+    right: 5px;
+    bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.612);
+    border-radius: 2px;
+    padding: 2px;
+  }
+  .header__menu {
+    display: flex;
+  }
+  .header__navigation {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navigation__menu {
+    flex-direction: column;
+  }
+  .navigation__menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 5px;
+  }
+  .navigation__brand {
+    width: 50%;
+  }
+}
+
 .header {
   display: flex;
-  flex-direction: column;
 }
 
 .header__image-block {
@@ -187,7 +252,6 @@ body {
 
 .navigation__menu {
   display: flex;
-  flex-direction: row;
 }
 
 .navigation__icon {
@@ -197,7 +261,6 @@ body {
 
 .navigation__menu-item {
   flex: 1 1 auto;
-  margin: 15px 5px;
   font-size: 14px;
   color: #52795d;
 }
@@ -236,28 +299,25 @@ body {
 
 /*   MENU   */
 .header__menu {
-  width: 100%;
-}
-
-.menu__tabs {
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: 'Alata', sans-serif;
   width: 100%;
+  margin-top: -5px;
 }
 
 .menu__item {
-  background-color: rgba(115, 115, 89, 0.55);
+  background-color: rgba(232, 232, 232, 0.55);
   flex-grow: 1;
   padding: 5px 0;
   text-align: center;
-  border-right: 0.5px solid rgba(115, 115, 89, 0.71);
-  border-left: 0.5px solid rgba(115, 115, 89, 0.71);
+  border-right: 0.5px solid rgba(232, 232, 232, 0.71);
+  border-left: 0.5px solid rgba(232, 232, 232, 0.71);
   color: #52795d;
 }
 
 .menu__item:hover {
-  background-color: rgba(115, 115, 89, 0.71);
+  background-color: rgba(200, 200, 150, 0.81);
   cursor: pointer;
 }
 
@@ -274,6 +334,9 @@ body {
   }
   .articles__article {
     flex: 1 1 auto;
+  }
+  .aside {
+    display: none;
   }
 }
 
@@ -296,6 +359,9 @@ body {
   .article__icon {
     height: 180px;
   }
+  .aside {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -316,6 +382,53 @@ body {
   }
   .subscribtion__icon {
     width: 70px;
+  }
+  .articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .articles__article {
+    flex-basis: 23%;
+  }
+  .article__icon {
+    height: 180px;
+  }
+  .aside {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1176px) {
+  .main-content {
+    width: 62%;
+    margin: 15px auto;
+    margin: 15px 28% 15px;
+  }
+  .subscribtion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscribtion__desc {
+    flex-basis: 65%;
+  }
+  .subscribtion__input {
+    flex-basis: 35%;
+  }
+  .subscribtion__icon {
+    width: 70px;
+  }
+  .articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .articles__article {
+    flex-basis: 23%;
+  }
+  .article__icon {
+    height: 180px;
   }
 }
 
@@ -364,12 +477,11 @@ body {
 }
 
 .article__content-item {
-  flex: 1 1 auto;
   margin: 5px 0;
 }
 
 .article__image {
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -422,6 +534,12 @@ body {
     width: 70%;
     margin: 15px auto;
   }
+  .footer__menu-item {
+    font-size: 8px;
+  }
+  .footer__copyright {
+    font-size: 7px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -430,6 +548,12 @@ body {
     margin: 15px auto;
     justify-content: space-between;
   }
+  .footer__menu-item {
+    font-size: 8px;
+  }
+  .footer__copyright {
+    font-size: 7px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -437,6 +561,28 @@ body {
     width: 80%;
     margin: 15px auto;
     justify-content: space-between;
+  }
+  .footer__menu-item {
+    font-size: 10px;
+  }
+  .footer__copyright {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1176px) {
+  .footer {
+    width: 80%;
+    margin: 15px auto;
+    justify-content: space-between;
+  }
+  .footer__menu-item {
+    font-size: 10px;
+  }
+  .footer__copyright {
+    font-size: 9px;
+    margin-top: 5px;
   }
 }
 
@@ -455,7 +601,6 @@ body {
 
 .footer__menu-item {
   flex: 1 1 auto;
-  font-size: 8px;
   color: #52795d;
 }
 
@@ -466,7 +611,6 @@ body {
 }
 
 .footer__copyright {
-  font-size: 7px;
   color: #999;
 }
 
@@ -480,7 +624,7 @@ body {
 
 .footer__links .link {
   display: block;
-  width: 30px;
+  width: 26px;
   margin: 3px;
 }
 

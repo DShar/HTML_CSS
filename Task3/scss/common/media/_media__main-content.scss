@@ -16,6 +16,10 @@
             flex:1 1 auto;
         }
     }
+
+    .aside{
+        display: none;
+    }
 }
 
 @media screen and (min-width:480px) and (max-width: 768px)
@@ -42,6 +46,10 @@
     .article__icon{
         height: 180px;
     }
+
+    .aside{
+        display: none;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width: 992px)
@@ -67,6 +75,65 @@
         &__icon{
             width: 70px;
         }
+    }
+
+    .articles{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__article{
+            flex-basis: 23%;
+        }
+    }
+
+    .article__icon{
+        height: 180px;
+    }
+
+    .aside{
+        display: none;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width: 1176px)
+{
+    .main-content
+    {
+        @include center-content(62%);
+        margin: 15px 28% 15px;
+    }
+
+    .subscribtion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__desc{
+            flex-basis: 65%;
+        }
+
+        &__input{
+            flex-basis: 35%;
+        }
+
+        &__icon{
+            width: 70px;
+        }
+    }
+
+    .articles{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__article{
+            flex-basis: 23%;
+        }
+    }
+
+    .article__icon{
+        height: 180px;
     }
 
 }

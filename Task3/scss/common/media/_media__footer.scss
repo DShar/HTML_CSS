@@ -2,6 +2,14 @@
 {
     .footer{
         @include center-content(70%);
+
+        &__menu-item{
+            font-size: 8px;
+        }
+
+        &__copyright{
+            font-size: 7px;
+        }
     }
 }
 
@@ -10,6 +18,14 @@
     .footer{
         @include center-content(80%);
         justify-content: space-between;
+
+        &__menu-item{
+            font-size: 8px;
+        }
+
+        &__copyright{
+            font-size: 7px;
+        }
     }
 }
 
@@ -18,5 +34,31 @@
     .footer{
         @include center-content(80%);
         justify-content: space-between;
+
+        &__menu-item{
+            font-size: 10px;
+        }
+
+        &__copyright{
+            font-size: 9px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (min-width:993px) and (max-width: 1176px)
+{
+    .footer{
+        @include center-content(80%);
+        justify-content: space-between;
+
+        &__menu-item{
+            font-size: 10px;
+        }
+
+        &__copyright{
+            font-size: 9px;
+            margin-top: 5px;
+        }
     }
 }
