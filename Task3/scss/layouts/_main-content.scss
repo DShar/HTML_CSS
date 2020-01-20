@@ -35,6 +35,7 @@
     width: 33%;
 }
 
+
 /*              ARTICLES                */
 .articles{
     display: flex;
@@ -94,4 +95,8 @@
     &:hover{
         text-decoration: underline;
     }
+}
+
+.post__link{
+    text-decoration: none;
 }

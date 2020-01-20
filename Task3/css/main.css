@@ -297,6 +297,10 @@ body {
   background: url("../images/menu-icons/about-icon.svg") no-repeat;
 }
 
+.twitter-icon {
+  background: url("../images/twitter.svg") no-repeat;
+}
+
 /*   MENU   */
 .header__menu {
   flex-direction: row;
@@ -400,10 +404,15 @@ body {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1176px) {
-  .main-content {
-    width: 62%;
+  .wrapper {
+    width: 80%;
     margin: 15px auto;
-    margin: 15px 28% 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .main-content {
+    flex-basis: 77%;
   }
   .subscribtion {
     display: flex;
@@ -429,6 +438,13 @@ body {
   }
   .article__icon {
     height: 180px;
+  }
+  .aside {
+    font-size: 12px;
+    margin-left: 5%;
+  }
+  .post__title {
+    text-transform: uppercase;
   }
 }
 
@@ -527,6 +543,10 @@ body {
 
 .article_link-to-read:hover {
   text-decoration: underline;
+}
+
+.post__link {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 479px) {
