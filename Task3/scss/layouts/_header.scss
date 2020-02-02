@@ -8,12 +8,6 @@
 .header__image-block{
     font-family: 'Dancing Script', cursive;
     position: relative;
-
-    &::after{
-        font-size: 8px;
-        position: absolute;
-        font-family: 'Alata', sans-serif;
-    }
 }
 
 .header__image{
@@ -70,27 +64,27 @@
     margin-right: auto;
 }
 
-.fashion-icon{
+.icon-fashion{
     background: url('../images/menu-icons/fashion-icon.svg') no-repeat;
 }
 
-.beauty-icon{
+.icon-beauty{
     background: url('../images/menu-icons/beauty-icon.svg') no-repeat;
 }
 
-.travel-icon{
+.icon-travel{
     background: url('../images/menu-icons/travel-icon.svg') no-repeat;
 }
 
-.culture-icon{
+.icon-culture{
     background: url('../images/menu-icons/culture-icon.svg') no-repeat;
 }
 
-.about-icon{
+.icon-about{
     background: url('../images/menu-icons/about-icon.svg') no-repeat;
 }
 
-.twitter-icon{
+.icon-twitter{
     background: url('../images/twitter.svg') no-repeat;
 }
 
@@ -111,7 +105,10 @@
     text-align: center;
     border-right: 0.5px solid rgba(232, 232, 232, 0.71);
     border-left: 0.5px solid rgba(232, 232, 232, 0.71);
-    color: rgb(82, 121, 93);
+
+    &>a{
+        color: rgb(82, 121, 93);
+    }
 
     &:hover{
         background-color: rgba(200, 200, 150, 0.81);

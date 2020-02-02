@@ -24,7 +24,7 @@
 
 .subscribtion__text{
     flex: 1 1 auto;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .subscribtion__email{
@@ -86,14 +86,10 @@
 .article_link-to-read{
     color: rgb(82, 121, 93);
     text-decoration: none;
-    &::after{
-        content: ">>";
-        font-size: 0.8em;
-        color: rgb(82, 121, 93);
-    }
 
     &:hover{
         text-decoration: underline;
+        color: rgb(255, 137, 54);
     }
 }
 

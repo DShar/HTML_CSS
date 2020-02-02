@@ -17,6 +17,10 @@ body {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 /***** Common classes   *****/
 .bold {
   font-weight: 600;
@@ -28,21 +32,25 @@ body {
     margin: 15px auto;
     flex-direction: column;
   }
+  .header__image-block {
+    display: flex;
+    flex-direction: column;
+  }
   .header__title {
     height: 20px;
     width: 100%;
-    bottom: 20px;
+    bottom: 30px;
   }
   .header__description {
     font-size: 10px;
     height: 20px;
     width: 100%;
-    bottom: 0;
+    bottom: 10px;
   }
-  .header__image-block::after {
-    content: "*photo by Jane Doe";
-    right: 0px;
-    bottom: -10px;
+  .header__signature {
+    font-size: 7px;
+    font-family: 'Alata', sans-serif;
+    align-self: flex-end;
   }
   .header__menu {
     display: none;
@@ -66,27 +74,31 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .header {
     width: 80%;
     margin: 15px auto;
     flex-direction: column;
   }
+  .header__image-block {
+    display: flex;
+    flex-direction: column;
+  }
   .header__title {
     height: 20px;
     width: 100%;
-    bottom: 20px;
+    bottom: 30px;
   }
   .header__description {
     font-size: 10px;
     height: 20px;
     width: 100%;
-    bottom: 0;
+    bottom: 10px;
   }
-  .header__image-block::after {
-    content: "*photo by Jane Doe";
-    right: 0px;
-    bottom: -10px;
+  .header__signature {
+    font-size: 8px;
+    font-family: 'Alata', sans-serif;
+    align-self: flex-end;
   }
   .header__menu {
     display: none;
@@ -107,12 +119,7 @@ body {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .header {
-    width: 80%;
-    margin: 15px auto;
-    flex-direction: column;
-  }
+@media screen and (min-width: 769px) {
   .header__title {
     font-size: 20px;
     padding: 10px;
@@ -126,15 +133,6 @@ body {
     height: 30px;
     width: fit-content;
     bottom: 70px;
-  }
-  .header__image-block::after {
-    content: "photo by Jane Doe";
-    color: #777;
-    right: 5px;
-    bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.812);
-    border-radius: 2px;
-    padding: 2px;
   }
   .header__menu {
     display: flex;
@@ -159,7 +157,7 @@ body {
   }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1176px) {
+@media screen and (min-width: 993px) {
   .header {
     width: 80%;
     margin: 15px auto;
@@ -178,15 +176,6 @@ body {
     height: 30px;
     width: fit-content;
     bottom: 70px;
-  }
-  .header__image-block::after {
-    content: "photo by Jane Doe";
-    color: #555;
-    right: 5px;
-    bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.612);
-    border-radius: 2px;
-    padding: 2px;
   }
   .header__menu {
     display: flex;
@@ -217,12 +206,6 @@ body {
 .header__image-block {
   font-family: 'Dancing Script', cursive;
   position: relative;
-}
-
-.header__image-block::after {
-  font-size: 8px;
-  position: absolute;
-  font-family: 'Alata', sans-serif;
 }
 
 .header__image {
@@ -317,6 +300,9 @@ body {
   text-align: center;
   border-right: 0.5px solid rgba(232, 232, 232, 0.71);
   border-left: 0.5px solid rgba(232, 232, 232, 0.71);
+}
+
+.menu__item > a {
   color: #52795d;
 }
 
@@ -471,7 +457,7 @@ body {
 
 .subscribtion__text {
   flex: 1 1 auto;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .subscribtion__email {
@@ -535,14 +521,9 @@ body {
   text-decoration: none;
 }
 
-.article_link-to-read::after {
-  content: ">>";
-  font-size: 0.8em;
-  color: #52795d;
-}
-
 .article_link-to-read:hover {
   text-decoration: underline;
+  color: #ff8936;
 }
 
 .post__link {
@@ -621,6 +602,9 @@ body {
 
 .footer__menu-item {
   flex: 1 1 auto;
+}
+
+.footer__menu-item > a {
   color: #52795d;
 }
 

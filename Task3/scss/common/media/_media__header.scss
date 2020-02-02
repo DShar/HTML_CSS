@@ -4,23 +4,28 @@
         @include center-content(70%);
         flex-direction: column;
 
+        &__image-block{
+            display: flex;
+            flex-direction: column;
+        }
+
         &__title{
             height: 20px;
             width: 100%;
-            bottom: 20px;
+            bottom: 30px;
         }
 
         &__description{
             font-size: 10px;
             height: 20px;
             width: 100%;
-            bottom: 0;
+            bottom: 10px;
         }
 
-        &__image-block::after{           
-            content: "*photo by Jane Doe";
-            right: 0px;
-            bottom: -10px;
+        &__signature{
+            font-size: 7px;
+            font-family: 'Alata', sans-serif;
+            align-self: flex-end;
         }
 
         &__menu{
@@ -52,29 +57,34 @@
     }
 }
 
-@media screen and (min-width:480px) and (max-width: 768px)
+@media screen and (min-width:480px)
 {
     .header{
         @include center-content(80%);
         flex-direction: column;
 
+        &__image-block{
+            display: flex;
+            flex-direction: column;
+        }
+
         &__title{
             height: 20px;
             width: 100%;
-            bottom: 20px;
+            bottom: 30px;
         }
 
         &__description{
             font-size: 10px;
             height: 20px;
             width: 100%;
-            bottom: 0;
+            bottom: 10px;
         }
 
-        &__image-block::after{           
-            content: "*photo by Jane Doe";
-            right: 0px;
-            bottom: -10px;
+        &__signature{
+            font-size: 8px;
+            font-family: 'Alata', sans-serif;
+            align-self: flex-end;
         }
 
         &__menu{
@@ -101,11 +111,9 @@
     }
 }
 
-@media screen and (min-width:769px) and (max-width: 992px)
+@media screen and (min-width:768px)
 {
     .header{
-        @include center-content(80%);
-        flex-direction: column;
 
         &__title{
             font-size: 20px;
@@ -123,14 +131,10 @@
             bottom: 70px;
         }
 
-        &__image-block::after{           
-            content: "photo by Jane Doe";
-            color: #777;
-            right: 5px;
+        &__signature{
+            position: absolute;
             bottom: 40px;
-            background-color: rgba(255, 255, 255, 0.812);
-            border-radius: 2px;
-            padding: 2px;
+            right: 10px;
         }
 
         &__menu{
@@ -156,12 +160,16 @@
         margin: 15px 5px;        
     }
 
+    .navigation__icon{
+        display: block;
+    }
+    
     .navigation__brand{
         width: 30%;
     }
 }
 
-@media screen and (min-width:993px) and (max-width: 1176px)
+@media screen and (min-width:993px)
 {
     .header{
         @include center-content(80%);
@@ -181,16 +189,6 @@
             height: 30px;
             width: fit-content;
             bottom: 70px;
-        }
-
-        &__image-block::after{           
-            content: "photo by Jane Doe";
-            color: #555;
-            right: 5px;
-            bottom: 40px;
-            background-color: rgba(255, 255, 255, 0.612);
-            border-radius: 2px;
-            padding: 2px;
         }
 
         &__menu{

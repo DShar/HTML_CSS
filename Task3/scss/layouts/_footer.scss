@@ -19,7 +19,10 @@
 
 .footer__menu-item{
     flex: 1 1 auto;
-    color: rgb(82, 121, 93);
+
+    &>a{
+        color: rgb(82, 121, 93);
+    }
 
     &:not(:last-child)::after{
         content: "|";

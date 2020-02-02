@@ -17,6 +17,10 @@ body {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 /***** Common classes   *****/
 .bold {
   font-weight: 600;
