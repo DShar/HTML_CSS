@@ -29,6 +29,10 @@
         color: #999;
         margin-left: 3px;
     }
+
+    &>a:hover{
+        color: rgb(255, 137, 54);
+    }
 }
 
 .footer__copyright{

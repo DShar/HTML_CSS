@@ -63,11 +63,6 @@
     color: rgb(82, 121, 93);
 }
 
-.article__title:hover, .article__title:active{
-    text-decoration: none;
-    color: rgb(255, 137, 54);
-}
-
 .article__text{
     font-size: 12px;
 }
@@ -89,10 +84,36 @@
 
     &:hover{
         text-decoration: underline;
-        color: rgb(255, 137, 54);
     }
 }
 
+.aside__post{
+    display: flex;
+    flex-direction: column;
+}
+
+.post__item{
+    flex: 1 1 auto;
+    margin-bottom: 5px;
+}
+
+.post__title{
+    border-bottom: rgba(214, 214, 214, 0.7) dashed 0.5px;
+    padding-bottom: 3px;
+}
+
 .post__link{
+    display: flex;
     text-decoration: none;
+    border: 0.5px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    color: rgb(82, 121, 93);
+
+    .icon{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+    }
 }

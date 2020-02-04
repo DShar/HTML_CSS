@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ff8936;
+}
+
 /***** Common classes   *****/
 .bold {
   font-weight: 600;

@@ -41,6 +41,7 @@
     .navigation__menu{
         border-bottom: rgba(214, 214, 214, 0.7) solid 1px;
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .navigation__menu-item{
@@ -95,10 +96,16 @@
     .header__navigation{
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-between;
     }
           
     .navigation__icon{
         display: none;
+    }
+
+    .navigation__menu{
+        flex-basis: 50%;
+        justify-content: space-between;
     }
 
     .navigation__menu-item{
@@ -107,7 +114,6 @@
 
     .navigation__brand{
         width: 40%;
-        margin: auto;
     }
 }
 
@@ -135,6 +141,14 @@
             position: absolute;
             bottom: 40px;
             right: 10px;
+
+            background-color: rgba(236,236,236,0.7);
+            padding: 2px;
+            border-radius: 3px;
+
+            .star{
+                display: none;
+            }
         }
 
         &__menu{
@@ -142,22 +156,14 @@
         }
     }
 
-    .header__navigation{
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .navigation__menu{
-        flex-basis: 50%;
         flex-direction: row;
     }
 
     .navigation__menu-item{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 15px 5px;        
+        align-items: center;       
     }
 
     .navigation__icon{
@@ -175,30 +181,11 @@
         @include center-content(80%);
         flex-direction: row;
 
-        &__title{
-            font-size: 20px;
-            padding: 10px;
-            height: 40px;
-            width: fit-content;
-            bottom: 100px;
-        }
-
-        &__description{
-            font-size: 15px;
-            padding: 5px;
-            height: 30px;
-            width: fit-content;
-            bottom: 70px;
-        }
-
-        &__menu{
-            display: flex;
-        }
     }
 
     .header__navigation{
         flex-direction: column-reverse;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-end;
     }
 
@@ -207,9 +194,7 @@
     }
 
     .navigation__menu-item{
-        display: flex;
         flex-direction: row;
-        align-items: center;
         margin: 10px 5px;
     }
 

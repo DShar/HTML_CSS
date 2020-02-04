@@ -74,6 +74,7 @@
         &__article{
             flex-basis: 23%;
         }
+    }
 }
 
 @media screen and (min-width:993px)
@@ -88,6 +89,7 @@
     .main-content
     {
         flex-basis: 77%;
+        margin: 0;
     }
 
     .subscribtion{
@@ -123,12 +125,11 @@
     }
 
     .aside{
+        display: block;
         font-size: 12px;
-        margin-left: 5%;
     }
 
     .post__title{
         text-transform: uppercase;
     }
-
 }
