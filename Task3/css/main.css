@@ -280,6 +280,10 @@ a:hover {
   background: url("../images/twitter.svg") no-repeat;
 }
 
+.icon-facebook {
+  background: url("../images/facebook.svg") no-repeat;
+}
+
 /*   MENU   */
 .header__menu {
   flex-direction: row;
@@ -381,27 +385,12 @@ a:hover {
     flex-basis: 77%;
     margin: 0;
   }
-  .subscribtion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .subscribtion__desc {
-    flex-basis: 65%;
-  }
-  .subscribtion__input {
-    flex-basis: 35%;
-  }
   .subscribtion__icon {
     width: 70px;
   }
   .articles {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .articles__article {
-    flex-basis: 23%;
   }
   .article__icon {
     height: 180px;
@@ -409,6 +398,7 @@ a:hover {
   .aside {
     display: block;
     font-size: 12px;
+    flex-basis: 20%;
   }
   .post__title {
     text-transform: uppercase;
@@ -504,6 +494,7 @@ a:hover {
 .aside__post {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .post__item {

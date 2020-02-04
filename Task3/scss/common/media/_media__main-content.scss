@@ -93,18 +93,6 @@
     }
 
     .subscribtion{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        &__desc{
-            flex-basis: 65%;
-        }
-
-        &__input{
-            flex-basis: 35%;
-        }
-
         &__icon{
             width: 70px;
         }
@@ -113,11 +101,6 @@
     .articles{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-
-        &__article{
-            flex-basis: 23%;
-        }
     }
 
     .article__icon{
@@ -127,6 +110,7 @@
     .aside{
         display: block;
         font-size: 12px;
+        flex-basis: 20%;
     }
 
     .post__title{
