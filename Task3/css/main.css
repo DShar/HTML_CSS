@@ -145,7 +145,7 @@ a:hover {
   }
   .header__signature {
     position: absolute;
-    bottom: 40px;
+    bottom: 10%;
     right: 10px;
     background-color: rgba(236, 236, 236, 0.7);
     padding: 2px;
@@ -156,6 +156,9 @@ a:hover {
   }
   .header__menu {
     display: flex;
+  }
+  .header__menu .menu__details {
+    display: none;
   }
   .navigation__menu {
     flex-direction: row;
@@ -193,6 +196,16 @@ a:hover {
   }
   .navigation__brand {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1176px) {
+  .header__menu .menu__item {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .header__menu .menu__details {
+    display: block;
   }
 }
 
@@ -308,6 +321,10 @@ a:hover {
 .menu__item:hover {
   background-color: rgba(200, 200, 150, 0.81);
   cursor: pointer;
+}
+
+.menu__details {
+  font-size: 10px;
 }
 
 @media screen and (max-width: 479px) {
@@ -536,7 +553,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer {
     width: 80%;
     margin: 15px auto;
@@ -550,27 +567,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .footer {
-    width: 80%;
-    margin: 15px auto;
-    justify-content: space-between;
-  }
-  .footer__menu-item {
-    font-size: 10px;
-  }
-  .footer__copyright {
-    font-size: 9px;
-    margin-top: 5px;
-  }
-}
-
-@media screen and (min-width: 993px) and (max-width: 1176px) {
-  .footer {
-    width: 80%;
-    margin: 15px auto;
-    justify-content: space-between;
-  }
+@media screen and (min-width: 769px) {
   .footer__menu-item {
     font-size: 10px;
   }

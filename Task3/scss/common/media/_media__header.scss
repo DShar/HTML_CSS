@@ -139,7 +139,7 @@
 
         &__signature{
             position: absolute;
-            bottom: 40px;
+            bottom: 10%;
             right: 10px;
 
             background-color: rgba(236,236,236,0.7);
@@ -153,6 +153,10 @@
 
         &__menu{
             display: flex;
+
+            .menu__details{
+                display: none;
+            }
         }
     }
 
@@ -200,5 +204,18 @@
 
     .navigation__brand{
         width: 50%;
+    }
+}
+
+@media screen and (min-width: 1176px){
+    .header__menu{
+        .menu__item{
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .menu__details{
+            display: block;
+        }
     }
 }

@@ -13,3 +13,4 @@ function scss() {  // Создаем таск "scss"
 
 exports.scss = scss;
 exports.watchFiles = watchFiles;
+exports.default = watchFiles;
